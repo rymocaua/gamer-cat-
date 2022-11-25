@@ -1,0 +1,356 @@
+/* navegação  */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    background: #222222;
+}
+
+/*menu navbar*/
+.imagem-logo{
+    width: 60px;
+    left: 5%;
+}
+
+.header, .navigation-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header{
+    background-color: #170e30;
+    box-shadow: 1px 1px 7px #680000;
+    height: 3.5em;
+    justify-content: space-between;
+    padding: 0 6%;
+}
+
+.navigation-header{
+    margin-right: 25%;
+    gap: 3em;
+    z-index: 2;
+}
+
+.navigation-header a{
+    text-decoration: none;
+    color: #fff;
+    transition: 1s;
+    font-weight: bold;
+}
+.navigation-header a:hover{
+    color: #ef1e9d;
+    cursor: pointer;
+}
+.active{
+    background-color: #0a021d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.btn-icon-hader{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*caixa de pesquisa*/
+
+.search-box{
+    position: absolute;
+    top: 2%;
+    left: 78%;
+    transform: translate(-10%, -10%);
+    background: #1f0d79;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #000;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+::-webkit-input-placeholder{
+    color: #ef1e9d;
+    opacity: 40%;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1f0d79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+    background: white;
+
+}
+
+/*parte de cima*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*carrossel*/
+
+.content{
+    border: transparent;
+    border-radius: none;
+    transition: 1s;
+}
+.carousel-item{
+    padding: 0;
+    background: none;
+    border-radius: 20%;
+}
+.carrossel{
+    max-width: 900px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*grid*/
+
+
+
+.container-game{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    padding: 100px;
+    grid-gap: 1px;
+    max-width: 905.4px;
+    max-height: 402.3px;
+    margin: 0 auto;
+}
+
+.conteudo-game{
+    position: relative;
+}
+
+.conteudo-game .img-game{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo-game .legenda{
+    position: absolute;
+    background: transparent;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.texto{
+     border-left: #02daff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.texto h1{
+
+    
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.principal{
+    width: 500px;
+    height: 400px;
+    left: -20%;                     
+    top: -33.2%;
+    transition: 1s;
+}
+.principal:hover{
+    width: 510px;
+    height: 410px;
+    left: -20%;
+    top: -33.2%;
+}
+
+.segundo{
+    width: 400px;
+    height: 200px;
+    left: -24.8%;
+    top: -33.2%;
+    transition: 1s;
+}
+.segundo:hover{
+    width: 410px;
+    height: 210px;
+    left: -25.1%;
+    top: -33.9%;
+}
+
+
+.terceiro{
+    top: 34%;
+    width: 400px;
+    height: 200px;
+    left: -125%;
+    transition: 1s;
+}
+.terceiro:hover{
+    top: 33.6%;
+    width: 410px;
+    height: 210px;
+    left: -124%;
+}
+
+.noticias{
+    margin-top: 30px;
+    color: white;
+   
+}
+
+
+
+/*AQUI ESTÁ A FORMATAÇÃO DAS NOTICIAS-ABAIXO-FIFA*/
+
+.noticia-principal{
+margin: 2rem 0;
+display: flex;
+color: #fff;
+border-bottom: 5px #02daff solid;
+}
+
+
+.noticia-principal img{
+    margin-bottom: 5;
+    width: 300px;
+    display: flex;
+
+}
+
+.noticia-principal div{
+    padding-left: 10px;
+}
+
+.consoles{
+    display: flex;
+    
+}
+
+.consoles p{
+    padding: 0px 5px;
+    margin: 0px 0px 0px 5px;
+    background-color: #02daff;
+    border-radius: 5px ;
+    font-size: 13px;
+    
+   
+}
+
+.text{
+    margin: 0;
+    padding-bottom: 35px ;
+}
+
+/*Professor*/
+.principalJogos{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.noticia h3 {
+ text-align: center;
+color: #02daff;
+}
+
+.noticia {
+    margin-top: 2rem;
+    color: #000;
+    text-align: left;
+    }
+/*Professor*/
+
+@media screen and (max-width:768px) {
+    .header{
+        justify-content: space-between;
+    }
+    .btn-icon-hader{
+        display: block;
+    }
+    .navigation-header{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: #1b0a49;
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+    .search-box{
+        top: 68%;
+        left: 71%;
+        transform: translate(-70%, -40%);
+    }
+
+    .search-btn{
+        display: none;
+    }
+    .search-txt{
+        display: block;
+        width: 99px;
+    }
+    .search-box:hover > .search-txt{
+        width: 99px;
+        padding: none;
+    }
+}
+
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    top{margin-left: -40vw;}
+}
+
